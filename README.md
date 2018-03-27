@@ -62,6 +62,24 @@ npm update node-static
 
 To update Phaser, run [/update_phaser.sh](/update_phaser.sh).
 
+### Auto Compile
+
+- Install: [Run On Save for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave)
+
+- Insert following settings:
+```
+"emeraldwalk.runonsave": {
+    "commands": [
+        {
+            "match": "\\.ts$",
+            "isAsync": true,
+            "cmd": "tsc -p ${workspaceRoot} --outFile ${workspaceRoot}/bin/js/game.js"
+        }
+    ]
+}
+```
+
+
 ## Contributing
 If something is out of date, please make an Issue or a Pull Request and I'll update it.
 

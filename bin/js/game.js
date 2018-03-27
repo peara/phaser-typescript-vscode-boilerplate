@@ -10,7 +10,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var MyGame;
 (function (MyGame) {
-    var PhaserGame = (function (_super) {
+    var PhaserGame = /** @class */ (function (_super) {
         __extends(PhaserGame, _super);
         function PhaserGame() {
             var _this = _super.call(this, 800, 600, Phaser.AUTO, 'content', null) || this;
@@ -30,7 +30,7 @@ window.onload = function () {
 };
 var MyGame;
 (function (MyGame) {
-    var BootState = (function (_super) {
+    var BootState = /** @class */ (function (_super) {
         __extends(BootState, _super);
         function BootState() {
             return _super !== null && _super.apply(this, arguments) || this;
@@ -50,15 +50,16 @@ var MyGame;
 })(MyGame || (MyGame = {}));
 var MyGame;
 (function (MyGame) {
-    var GameState = (function (_super) {
+    var GameState = /** @class */ (function (_super) {
         __extends(GameState, _super);
         function GameState() {
             return _super !== null && _super.apply(this, arguments) || this;
         }
         GameState.prototype.preload = function () { };
         GameState.prototype.create = function () {
-            var logo = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, 'logo');
+            var logo = this.game.add.sprite(0, this.game.world.centerY, 'logo');
             logo.anchor.setTo(0.5, 0.5);
+            var logo2 = this.game.add.sprite(0, 0, 'logo');
         };
         return GameState;
     }(Phaser.State));
@@ -66,7 +67,7 @@ var MyGame;
 })(MyGame || (MyGame = {}));
 var MyGame;
 (function (MyGame) {
-    var PreloaderState = (function (_super) {
+    var PreloaderState = /** @class */ (function (_super) {
         __extends(PreloaderState, _super);
         function PreloaderState() {
             return _super !== null && _super.apply(this, arguments) || this;

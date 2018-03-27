@@ -8,7 +8,7 @@
     "compile:ts": "tsc --outFile ./bin/js/game.js",
     "inst": "npm install"
   },
-  "author": "Fatir Ahmad",
+  "author": "Fatir Ahmad - Nguyen Anh Tien",
   "license": "MIT",
   "dependencies": {
     "node-static": "^0.7.9"
